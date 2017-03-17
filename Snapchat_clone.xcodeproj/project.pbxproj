@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2186F0807A83B058BC1872F9 /* Pods_Snapchat_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEA66ADFEFD16DB97E9DC89 /* Pods_Snapchat_clone.framework */; };
+		BB1A0B2F1E7C6F37002E728D /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A0B2E1E7C6F37002E728D /* RoundedBtn.swift */; };
 		BB5F7B641E7B132700A8689D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B631E7B132700A8689D /* AppDelegate.swift */; };
 		BB5F7B661E7B132700A8689D /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B651E7B132700A8689D /* CameraVC.swift */; };
 		BB5F7B691E7B132700A8689D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5F7B671E7B132700A8689D /* Main.storyboard */; };
@@ -17,12 +18,14 @@
 		BB5F7B7B1E7B1A6A00A8689D /* AVCamCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B791E7B1A6A00A8689D /* AVCamCameraViewController.m */; };
 		BB5F7B801E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B7F1E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.m */; };
 		BB5F7B861E7C148700A8689D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB5F7B851E7C148700A8689D /* GoogleService-Info.plist */; };
+		BB5F7B881E7C604600A8689D /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B871E7C604600A8689D /* RoundTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C5F33C2DB2699F85D6DC6F9 /* Pods-Snapchat_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat_clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat_clone/Pods-Snapchat_clone.release.xcconfig"; sourceTree = "<group>"; };
 		42C55E1D347D38E8DD81D7AF /* Pods-Snapchat_clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat_clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat_clone/Pods-Snapchat_clone.debug.xcconfig"; sourceTree = "<group>"; };
 		8BEA66ADFEFD16DB97E9DC89 /* Pods_Snapchat_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1A0B2E1E7C6F37002E728D /* RoundedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
 		BB5F7B601E7B132700A8689D /* Snapchat_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5F7B631E7B132700A8689D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB5F7B651E7B132700A8689D /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		BB5F7B7F1E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPhotoCaptureDelegate.m; sourceTree = "<group>"; };
 		BB5F7B841E7B6BB100A8689D /* AVCameraVCDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCameraVCDelegate.h; sourceTree = "<group>"; };
 		BB5F7B851E7C148700A8689D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB5F7B871E7C604600A8689D /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			children = (
 				BB5F7B761E7B1A6A00A8689D /* AVCamPreviewView.h */,
 				BB5F7B771E7B1A6A00A8689D /* AVCamPreviewView.m */,
+				BB5F7B871E7C604600A8689D /* RoundTextField.swift */,
+				BB1A0B2E1E7C6F37002E728D /* RoundedBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			files = (
 				BB5F7B801E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.m in Sources */,
 				BB5F7B661E7B132700A8689D /* CameraVC.swift in Sources */,
+				BB1A0B2F1E7C6F37002E728D /* RoundedBtn.swift in Sources */,
 				BB5F7B641E7B132700A8689D /* AppDelegate.swift in Sources */,
 				BB5F7B7B1E7B1A6A00A8689D /* AVCamCameraViewController.m in Sources */,
+				BB5F7B881E7C604600A8689D /* RoundTextField.swift in Sources */,
 				BB5F7B7A1E7B1A6A00A8689D /* AVCamPreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +399,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 657SX83TSQ;
 				INFOPLIST_FILE = Snapchat_clone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlfredoM.Snapchat-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +417,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 657SX83TSQ;
 				INFOPLIST_FILE = Snapchat_clone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlfredoM.Snapchat-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
