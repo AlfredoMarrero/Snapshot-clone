@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2186F0807A83B058BC1872F9 /* Pods_Snapchat_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEA66ADFEFD16DB97E9DC89 /* Pods_Snapchat_clone.framework */; };
 		BB1A0B2F1E7C6F37002E728D /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A0B2E1E7C6F37002E728D /* RoundedBtn.swift */; };
+		BB52625E1E7C80AC000B8578 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52625D1E7C80AC000B8578 /* LoginVC.swift */; };
 		BB5F7B641E7B132700A8689D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B631E7B132700A8689D /* AppDelegate.swift */; };
 		BB5F7B661E7B132700A8689D /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B651E7B132700A8689D /* CameraVC.swift */; };
 		BB5F7B691E7B132700A8689D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5F7B671E7B132700A8689D /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		42C55E1D347D38E8DD81D7AF /* Pods-Snapchat_clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat_clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat_clone/Pods-Snapchat_clone.debug.xcconfig"; sourceTree = "<group>"; };
 		8BEA66ADFEFD16DB97E9DC89 /* Pods_Snapchat_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1A0B2E1E7C6F37002E728D /* RoundedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
+		BB52625D1E7C80AC000B8578 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BB5F7B601E7B132700A8689D /* Snapchat_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5F7B631E7B132700A8689D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB5F7B651E7B132700A8689D /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				BB5F7B7E1E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.h */,
 				BB5F7B7F1E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.m */,
 				BB5F7B651E7B132700A8689D /* CameraVC.swift */,
+				BB52625D1E7C80AC000B8578 /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				BB5F7B801E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.m in Sources */,
 				BB5F7B661E7B132700A8689D /* CameraVC.swift in Sources */,
+				BB52625E1E7C80AC000B8578 /* LoginVC.swift in Sources */,
 				BB1A0B2F1E7C6F37002E728D /* RoundedBtn.swift in Sources */,
 				BB5F7B641E7B132700A8689D /* AppDelegate.swift in Sources */,
 				BB5F7B7B1E7B1A6A00A8689D /* AVCamCameraViewController.m in Sources */,

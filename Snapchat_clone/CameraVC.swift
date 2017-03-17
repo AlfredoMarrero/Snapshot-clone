@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CameraVC: AVCamCameraViewController, AVCameraVCDelegate{
     
     @IBOutlet weak var cameraBtn: UIButton!
     @IBOutlet weak var recordBtn: UIButton!
     @IBOutlet weak var previewView: AVCamPreviewView!
+    
+    
     override func viewDidLoad() {
         self._previewView = previewView
         super.viewDidLoad()
         
         delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        guard FIRAuth.auth()?.currentUser != nil else {
+            performSegue(withIdentifier: "LoginVC", sender: nil)
+            return
+        }
     }
     
     @IBAction func recordBtnTapped(_ sender: Any) {
@@ -27,8 +37,6 @@ class CameraVC: AVCamCameraViewController, AVCameraVCDelegate{
     @IBAction func changeCameraBtnPressed(_ sender: Any) {
        
     }
-    
-    
     func shouldEnableRecordUI(_ enable: Bool) {
         recordBtn.isEnabled = enable
         print ("Should enable record UI \(enable)")

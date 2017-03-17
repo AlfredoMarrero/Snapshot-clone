@@ -8,4 +8,5 @@ target 'Snapchat_clone' do
   # Pods for Snapchat_clone
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
 end

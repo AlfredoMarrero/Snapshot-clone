@@ -60,16 +60,17 @@
                         <outlet property="cameraBtn" destination="TI4-fE-HCc" id="glu-6J-Uhi"/>
                         <outlet property="previewView" destination="phq-uU-ash" id="3uL-qk-FPb"/>
                         <outlet property="recordBtn" destination="kxg-Fe-Wjk" id="1C6-p9-gnT"/>
+                        <segue destination="wx9-rf-HVF" kind="presentation" identifier="LoginVC" id="jjo-ge-U5M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="G3m-g3-eVS">
             <objects>
-                <viewController id="wx9-rf-HVF" sceneMemberID="viewController">
+                <viewController id="wx9-rf-HVF" customClass="LoginVC" customModule="Snapchat_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tYA-Qr-AbF"/>
                         <viewControllerLayoutGuide type="bottom" id="GsU-Fa-dmT"/>
