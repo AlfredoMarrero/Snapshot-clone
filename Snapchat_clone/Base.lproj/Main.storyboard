@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JA0-lk-hB8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -248,13 +249,32 @@
                                 <rect key="frame" x="0.0" y="93" width="375" height="574"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YfN-XO-Dcv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="YfN-XO-Dcv" customClass="UserCell" customModule="Snapchat_clone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YfN-XO-Dcv" id="M3h-EQ-D0F">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alfredo25Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3g-CX-kqM">
+                                                    <rect key="frame" x="22" y="11" width="236" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="236" id="eHW-LO-Kkx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="S3g-CX-kqM" firstAttribute="leading" secondItem="M3h-EQ-D0F" secondAttribute="leadingMargin" constant="14" id="Eoe-De-Nsp"/>
+                                                <constraint firstItem="S3g-CX-kqM" firstAttribute="top" secondItem="M3h-EQ-D0F" secondAttribute="topMargin" constant="3" id="eUj-6T-gxM"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="S3g-CX-kqM" secondAttribute="bottom" constant="3" id="rgM-n8-Jmf"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstNameLbl" destination="S3g-CX-kqM" id="Wr0-3a-x4H"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -273,6 +293,9 @@
                             <constraint firstItem="WPv-hV-3LP" firstAttribute="leading" secondItem="06P-3m-1he" secondAttribute="leading" id="dCB-Ku-9pa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="IQp-a5-3pe" id="r0W-z4-0va"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mx-Sc-K17" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

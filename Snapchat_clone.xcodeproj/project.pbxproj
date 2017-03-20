@@ -12,6 +12,7 @@
 		BB162B5B1E801AFA000192FE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB162B5A1E801AFA000192FE /* DataService.swift */; };
 		BB162B5D1E802667000192FE /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB162B5C1E802667000192FE /* UsersVC.swift */; };
 		BB162B5F1E80283B000192FE /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB162B5E1E80283B000192FE /* UserCell.swift */; };
+		BB162B611E802ED9000192FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB162B601E802ED9000192FE /* User.swift */; };
 		BB1A0B2F1E7C6F37002E728D /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A0B2E1E7C6F37002E728D /* RoundedBtn.swift */; };
 		BB52625E1E7C80AC000B8578 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52625D1E7C80AC000B8578 /* LoginVC.swift */; };
 		BB5F7B641E7B132700A8689D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F7B631E7B132700A8689D /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		BB162B5A1E801AFA000192FE /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BB162B5C1E802667000192FE /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		BB162B5E1E80283B000192FE /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		BB162B601E802ED9000192FE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BB1A0B2E1E7C6F37002E728D /* RoundedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
 		BB52625D1E7C80AC000B8578 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BB5F7B601E7B132700A8689D /* Snapchat_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 				BB5F7B6F1E7B132700A8689D /* Info.plist */,
 				BB5F7B851E7C148700A8689D /* GoogleService-Info.plist */,
 				BB5F7B751E7B1A6A00A8689D /* Snapchat_clone-Bridging-Header.h */,
+				BB162B601E802ED9000192FE /* User.swift */,
 			);
 			path = Snapchat_clone;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB162B611E802ED9000192FE /* User.swift in Sources */,
 				BB5F7B801E7B1CF100A8689D /* AVCamPhotoCaptureDelegate.m in Sources */,
 				BB5F7B661E7B132700A8689D /* CameraVC.swift in Sources */,
 				BB52625E1E7C80AC000B8578 /* LoginVC.swift in Sources */,
