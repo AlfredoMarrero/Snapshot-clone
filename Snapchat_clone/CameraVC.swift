@@ -24,10 +24,10 @@ class CameraVC: AVCamCameraViewController, AVCameraVCDelegate{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        guard FIRAuth.auth()?.currentUser != nil else {
+        //guard FIRAuth.auth()?.currentUser != nil else {
             performSegue(withIdentifier: "LoginVC", sender: nil)
-            return
-        }
+          //  return
+        //}
     }
     
     @IBAction func recordBtnTapped(_ sender: Any) {
@@ -51,7 +51,6 @@ class CameraVC: AVCamCameraViewController, AVCameraVCDelegate{
     func recordingHasStarted(){
         print("Can start recording.")
     }
-    
-    
+
 }
 
