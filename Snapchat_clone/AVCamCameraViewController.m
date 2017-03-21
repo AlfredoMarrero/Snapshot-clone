@@ -783,28 +783,30 @@ typedef NS_ENUM( NSInteger, AVCamLivePhotoMode ) {
 		success = [error.userInfo[AVErrorRecordingSuccessfullyFinishedKey] boolValue];
 	}
 	if ( success ) {
+        [self.delegate videoRecordingComplete:outputFileURL];
 		// Check authorization status.
-		[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
-			if ( status == PHAuthorizationStatusAuthorized ) {
-				// Save the movie file to the photo library and cleanup.
-				[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-					PHAssetResourceCreationOptions *options = [[PHAssetResourceCreationOptions alloc] init];
-					options.shouldMoveFile = YES;
-					PHAssetCreationRequest *creationRequest = [PHAssetCreationRequest creationRequestForAsset];
-					[creationRequest addResourceWithType:PHAssetResourceTypeVideo fileURL:outputFileURL options:options];
-				} completionHandler:^( BOOL success, NSError *error ) {
-					if ( ! success ) {
-						NSLog( @"Could not save movie to photo library: %@", error );
-					}
-					cleanup();
-				}];
-			}
-			else {
-				cleanup();
-			}
-		}];
+//		[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
+//			if ( status == PHAuthorizationStatusAuthorized ) {
+//				// Save the movie file to the photo library and cleanup.
+//				[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+//					PHAssetResourceCreationOptions *options = [[PHAssetResourceCreationOptions alloc] init];
+//					options.shouldMoveFile = YES;
+//					PHAssetCreationRequest *creationRequest = [PHAssetCreationRequest creationRequestForAsset];
+//					[creationRequest addResourceWithType:PHAssetResourceTypeVideo fileURL:outputFileURL options:options];
+//				} completionHandler:^( BOOL success, NSError *error ) {
+//					if ( ! success ) {
+//						NSLog( @"Could not save movie to photo library: %@", error );
+//					}
+//					cleanup();
+//				}];
+//			}
+//			else {
+//				cleanup();
+//			}
+//		}];
 	}
 	else {
+        [self.delegate videoRecordingFailed];
 		cleanup();
 	}
 	

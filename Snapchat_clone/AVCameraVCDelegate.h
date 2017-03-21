@@ -11,11 +11,16 @@
 #import <Foundation/Foundation.h>
 
 @protocol AVCameraVCDelegate <NSObject>
-
+    
 -(void)shouldEnableRecordUI:(BOOL)enable;
 -(void)shouldEnableCameraUI:(BOOL)enable;
 -(void) canSatartRecording;
 -(void)recordingHasStarted;
+-(void)videoRecordingComplete:(NSURL*)videoURL;
+-(void)videoRecordingFailed;
+-(void)snapshotTaken:(NSData*)snapshotData;
+-(void)snapshotFailed;
+    
 @end
 
 #endif /* Header_h */
